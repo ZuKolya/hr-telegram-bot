@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_DIR = Path(__file__).parent
-DB_PATH = r'C:\Users\Коля\Desktop\hr_metrics.db'
+DB_PATH = os.path.join(BASE_DIR, "hr_metrics.db")
 PLOT_DIR = os.path.join(BASE_DIR, "plots")
 os.makedirs(PLOT_DIR, exist_ok=True)
 
