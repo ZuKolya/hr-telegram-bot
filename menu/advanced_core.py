@@ -4,6 +4,9 @@ import pandas as pd
 import logging
 import sys
 import os
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from menu.data_repository import HRDataRepository
 from report_services.company_dynamics_service import CompanyDynamicsService
